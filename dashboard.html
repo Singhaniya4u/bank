@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome, <span id="userName">Ankit Singh Bhumihar</span>!</h1>
+
+        <div class="info-box">
+            <h2><strong>Enquiry Details</strong></h2>
+            <p><strong>Telecom Circle:</strong> <span id="telecomCircle">[Telecom Circle]</span></p>
+            <p><strong>Telecom Operator Applied For:</strong> <span id="telecomOperator">[Telecom Operator]</span></p>
+            <p><strong>File Reference:</strong> <span id="fileReference">[File Reference]</span></p>
+            <p><strong>Status:</strong> <span id="fileStatus">[File Status]</span></p>
+        </div>
+
+        <div class="info-box">
+            <h2>Balance</h2>
+            <p><strong>Balance:</strong> <span id="balance">[Balance]</span></p>
+            <p><strong>Status:</strong> <span id="balanceStatus">[Balance Status]</span></p>
+            <a id="moreOptionsLink" href="payments.html">More Options</a>
+        </div>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>

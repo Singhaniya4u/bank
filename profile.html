@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Profile</h1>
+
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fathersName">Father's Name:</label>
+            <input type="text" id="fathersName" name="fathersName" required>
+
+            <label for="mothersName">Mother's Name:</label>
+            <input type="text" id="mothersName" name="mothersName" required>
+
+            <label for="fullAddress">Full Address:</label>
+            <textarea id="fullAddress" name="fullAddress" required></textarea>
+
+            <label for="nearestLandmark">Nearest Landmark:</label>
+            <input type="text" id="nearestLandmark" name="nearestLandmark">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="alternateMobile">Alternate Mobile:</label>
+            <input type="tel" id="alternateMobile" name="alternateMobile">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>

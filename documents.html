@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="stylesheet" href="css/document.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Documents</h1>
+
+        <div id="documentsSection" class="info-box">
+            <h2>Existing Documents</h2>
+            <p><strong>Profile Photo:</strong> <span id="existingProfilePhoto">[Profile Photo]</span></p>
+            <p><strong>PAN Card:</strong> <span id="existingPanCard">[PAN Card]</span></p>
+            <p><strong>Bank Proof:</strong> <span id="existingBankProof">[Bank Proof]</span></p>
+            <p><strong>Aadhar Card:</strong> <span id="existingAadharCard">[Aadhar Card]</span></p>
+            <p><strong>ID (Voter ID / Driving License):</strong> <span id="existingIdProof">[ID Proof]</span></p>
+            <p><strong>Land Documents:</strong> <span id="existingLandDocuments">[Land Documents]</span></p>
+            <p><strong>Land Photographs:</strong> <span id="existingLandPhotos">[Land Photos]</span></p>
+            <p><strong>Status:</strong> <span id="existingStatus">[Status]</span></p>
+        </div>
+
+        <div id="documentsFormSection" class="info-box">
+            <h2>Upload Documents</h2>
+            <form id="documentsForm">
+                <label for="profilePhoto">Profile Photo / Photograph:</label>
+                <input type="file" id="profilePhoto" name="profilePhoto" accept=".jpg, .png" required>
+
+                <label for="panCard">PAN Card:</label>
+                <input type="file" id="panCard" name="panCard" accept=".jpg, .png, .pdf" required>
+
+                <label for="bankProof">Bank Proof (Bank Passbook / Cancel Cheque):</label>
+                <input type="file" id="bankProof" name="bankProof" accept=".jpg, .png, .pdf" required>
+
+                <label for="aadharCard">Aadhar Card:</label>
+                <input type="file" id="aadharCard" name="aadharCard" accept=".jpg, .png, .pdf" required>
+
+                <label for="idProof">ID Proof (Voter ID / Driving License):</label>
+                <input type="file" id="idProof" name="idProof" accept=".jpg, .png, .pdf" required>
+
+                <label for="landDocuments">Land Documents:</label>
+                <input type="file" id="landDocuments" name="landDocuments" accept=".jpg, .png, .pdf" required>
+
+                <label for="landPhotos">Land Photographs:</label>
+                <input type="file" id="landPhotos" name="landPhotos" accept=".jpg, .png, .pdf" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/documents.js"></script>
+</body>
+</html>

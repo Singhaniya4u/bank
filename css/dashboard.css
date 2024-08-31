@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Container for each page */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Dashboard Specific Styles */
+.dashboard-welcome {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-welcome h1 {
+    font-size: 26px;
+    color: #007bff;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.dashboard-welcome p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #007bff;
+}
+
+.info-card .info {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-card .status {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* Enquiry Details Section */
+.enquiry-details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-details h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.enquiry-details .detail-item {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.enquiry-details .detail-item span {
+    font-weight: bold;
+    color: #333;
+}
+
+.enquiry-details .status {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Balance Section */
+.balance-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.balance-section h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.balance-section .balance-info {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.balance-section .balance-info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.balance-section .balance-status {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.balance-section .more-info {
+    text-align: center;
+}
+
+.balance-section .more-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.balance-section .more-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .info-card, .dashboard-welcome, .enquiry-details, .balance-section {
+        padding: 15px;
+    }
+
+    .info-card h2, .dashboard-welcome h1, .enquiry-details h2, .balance-section h2 {
+        font-size: 20px;
+    }
+
+    .info-card .info, .enquiry-details .detail-item, .balance-section .balance-info {
+        font-size: 16px;
+    }
+}

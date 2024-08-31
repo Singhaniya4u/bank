@@ -1,0 +1,34 @@
+/* public/css/styles.css */
+
+/* Add styling specific to the Downloads page */
+#adminUploadSection {
+    margin-bottom: 20px;
+}
+
+#adminUploadSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#adminUploadSection input[type="file"] {
+    padding: 5px;
+}
+
+#userDownloadSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#userDownloadSection ul li {
+    margin: 10px 0;
+}
+
+#userDownloadSection a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#userDownloadSection a:hover {
+    text-decoration: underline;
+}

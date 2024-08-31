@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="css/payments.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Payments</h1>
+
+        <div id="paymentsInfo" class="info-box">
+            <h2>Payment Eligibility</h2>
+            <p><strong>Advance Amount:</strong> <span id="advanceAmount">[Advance Amount]</span></p>
+            <p><strong>Monthly Rent:</strong> <span id="monthlyRent">[Monthly Rent]</span></p>
+        </div>
+
+        <div id="requestPaymentSection" class="info-box">
+            <h2>Request Payment</h2>
+            <button id="requestPaymentButton">Request Payment</button>
+        </div>
+
+        <div id="bankDetailsSection" class="info-box" style="display: none;">
+            <h2>Select Bank Details</h2>
+            <form id="bankDetailsForm">
+                <label for="bankDetails">Bank Details:</label>
+                <select id="bankDetails" name="bankDetails" required>
+                    <option value="">Select Bank Details</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+
+        <div id="monthlyChartSection" class="info-box">
+            <h2>Monthly Rent Chart</h2>
+            <canvas id="monthlyChart"></canvas>
+        </div>
+    </div>
+
+    <script src="/js/payments.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

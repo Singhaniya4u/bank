@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices</title>
+    <link rel="stylesheet" href="css/invoices.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Invoices</h1>
+
+        <table id="invoicesTable">
+            <thead>
+                <tr>
+                    <th>Invoice ID</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Invoice rows will be populated dynamically -->
+            </tbody>
+        </table>
+
+        <div id="invoiceDetailsModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Submit Payment Details</h2>
+                <form id="paymentDetailsForm">
+                    <input type="hidden" id="invoiceId" name="invoiceId">
+                    <label for="paymentAmount">Payment Amount:</label>
+                    <input type="number" id="paymentAmount" name="paymentAmount" required>
+                    <label for="paymentMode">Payment Mode:</label>
+                    <select id="paymentMode" name="paymentMode" required>
+                        <option value="">Select Payment Mode</option>
+                        <option value="UPI">UPI</option>
+                        <option value="IMPS">IMPS</option>
+                        <option value="NEFT/RTGS">NEFT/RTGS</option>
+                    </select>
+                    <label for="paymentDate">Payment Date:</label>
+                    <input type="date" id="paymentDate" name="paymentDate" required>
+                    <label for="paymentRef">Payment Ref./UTR:</label>
+                    <input type="text" id="paymentRef" name="paymentRef" required>
+                    <label for="paymentReceipt">Payment Screenshot/Receipt:</label>
+                    <input type="file" id="paymentReceipt" name="paymentReceipt" accept="image/*,application/pdf">
+                    <button type="submit">Submit Payment Details</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/invoices.js"></script>
+</body>
+</html>

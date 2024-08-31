@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads</title>
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Downloads</h1>
+
+        <!-- Admin upload section -->
+        <div id="adminUploadSection">
+            <h2>Admin Upload</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- User download section -->
+        <div id="userDownloadSection">
+            <h2>Available Downloads</h2>
+            <ul id="fileList">
+                <!-- File list will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="/js/download.js"></script>
+</body>
+</html>

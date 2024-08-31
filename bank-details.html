@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details</title>
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="bank-details.html">Bank Details</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Bank Details</h1>
+
+        <div id="bankDetailsSection" class="info-box">
+            <h2>Existing Bank Details</h2>
+            <p><strong>Name:</strong> <span id="existingName">[Name]</span></p>
+            <p><strong>PAN:</strong> <span id="existingPan">[PAN]</span></p>
+            <p><strong>Name at Bank:</strong> <span id="existingNameAtBank">[Name at Bank]</span></p>
+            <p><strong>Bank Name:</strong> <span id="existingBankName">[Bank Name]</span></p>
+            <p><strong>Account Number:</strong> <span id="existingAccountNumber">[Account Number]</span></p>
+            <p><strong>IFSC Code:</strong> <span id="existingIfscCode">[IFSC Code]</span></p>
+            <p><strong>Bank Proof:</strong> <span id="existingBankProof">[Bank Proof]</span></p>
+            <p><strong>Status:</strong> <span id="existingStatus">[Status]</span></p>
+        </div>
+
+        <div id="bankDetailsFormSection" class="info-box">
+            <h2>Fill Bank Details</h2>
+            <form id="bankDetailsForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="pan">PAN:</label>
+                <input type="text" id="pan" name="pan" required>
+
+                <label for="nameAtBank">Name at Bank:</label>
+                <input type="text" id="nameAtBank" name="nameAtBank" required>
+
+                <label for="bankName">Bank Name:</label>
+                <input type="text" id="bankName" name="bankName" required>
+
+                <label for="accountNumber">Account Number:</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+
+                <label for="reEnterAccountNumber">Re-enter Account Number:</label>
+                <input type="text" id="reEnterAccountNumber" name="reEnterAccountNumber" required>
+
+                <label for="ifscCode">IFSC Code:</label>
+                <input type="text" id="ifscCode" name="ifscCode" required>
+
+                <label for="bankProof">Upload Bank Proof (Cancel Cheque / Bank Passbook):</label>
+                <input type="file" id="bankProof" name="bankProof" accept=".pdf, .jpg, .png" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/bank-details.js"></script>
+</body>
+</html>
